@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Responsive Website</title>
+    <link rel="stylesheet" type="text/css" href="css.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing Script&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <header>
+      <div class="bar">
+        <div class="logo">
+          <a href="index.html"><img src="img/logo.png" alt="Logo" /></a>
+          <h1>Phang Nga</h1>
+        </div>
+
+        <section class="navigation">
+          <div class="nav-container">
+            <nav>
+              <div class="nav-mobile">
+                <a id="nav-toggle" href="#!"><span></span></a>
+              </div>
+              <ul class="nav-list">
+                <li>
+                  <a href="#!">สถานที่ท่องเที่ยว</a>
+                  <ul class="nav-dropdown">
+                    <li><a href="p1.html">อำเภอเมือง</a></li>
+                    <li><a href="p2.html">อำเภอตะกั่วทุ่ง</a></li>
+                    <li><a href="#">อำเภอทับปุด</a></li>
+                    <li><a href="#">อำเภอกะปง</a></li>
+                    <li><a href="#">อำเภอท้ายเหมือง</a></li>
+                    <li><a href="#">อำเภอตะกั่วป่า</a></li>
+                    <li><a href="#">อำเภอคุระบุรี</a></li>
+                    <li><a href="#">อำเภอเกาะยาว</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#!">สินค้า OTOP</a>
+                  <ul class="nav-dropdown">
+                    <li><a href="#">อำเภอเมือง</a></li>
+                    <li><a href="#">อำเภอตะกั่วทุ่ง</a></li>
+                    <li><a href="#">อำเภอทับปุด</a></li>
+                    <li><a href="#">อำเภอกะปง</a></li>
+                    <li><a href="#">อำเภอท้ายเหมือง</a></li>
+                    <li><a href="#">อำเภอตะกั่วป่า</a></li>
+                    <li><a href="#">อำเภอคุระบุรี</a></li>
+                    <li><a href="#">อำเภอเกาะยาว</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </section>
+      </div>
+    </header>
+
+    <div class="background-image">
+        <h2>Phang Nga</h2>
+    </div>
+    
+    
+    <script>
+      document
+        .getElementById("nav-toggle")
+        .addEventListener("click", function () {
+          var menu = document.querySelector(".menu");
+          menu.classList.toggle("open");
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
